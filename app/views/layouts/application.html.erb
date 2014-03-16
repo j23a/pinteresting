@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]><html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" class="no-js"><!--<![endif]-->
+
 	<head>
+		<meta charset="utf-8">
 	  <title>MustardBread</title>
+
+  	<!-- Google Chrome Frame for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
 	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	  <%= csrf_meta_tags %>
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-<body>
+	<body>
 
-		<%= render 'layouts/header' %>
-		<div class="container">
-			<% flash.each do |name, msg| %>
-				<%= content_tag(:div, msg, class: "alert alert-info") %>
-			<% end %>
-			<%= yield %>
-		</div>
+			<%= render 'layouts/header' %>
+			<div class="container">
+				<% flash.each do |name, msg| %>
+					<%= content_tag(:div, msg, class: "alert alert-info") %>
+				<% end %>
+				<%= yield %>
+			</div>
 
-</body>
+	</body>
 </html>

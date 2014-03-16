@@ -1,24 +1,33 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
-$body-bg:											#34495e;
+$body-bg:											#ecf0f1;
 $font-family-sans-serif:   		'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:								45px;
-$navbar-default-bg: 					#34495e;
+$navbar-default-bg: 					#ecf0f1;
 $navbar-default-brand-color:	#f1c40f;
 $brand-primary:								#f1c40f;
-$navbar-default-link-color:		#ecf0f1;
+$navbar-default-link-color:		#7f8c8d;
 $navbar-default-link-hover-color:	darken($navbar-default-link-color, 20%);
-$jumbotron-bg:								#2c3e50;
-$text-color:    							#ecf0f1;
+$jumbotron-bg:								#ecf0f1;
+$text-color:    							#2c3e50;
 $btn-primary-bg: 							#f1c40f;
-$btn-primary-color:  					#000000;
+$btn-primary-color:  					#ecf0f1;
 
 @import 'bootstrap';
 
 .center {
-	text-align: center;
+text-align: center;
 }
 
 .navbar-brand {
 	font-weight: bold;
+}
+
+// Classes
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
 }

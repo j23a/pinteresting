@@ -5,4 +5,7 @@ class Pin < ActiveRecord::Base
 
 	do_not_validate_attachment_file_type :image
 
+  validates :description, presence: true
+  validates :image, presence: true
+ 
 end

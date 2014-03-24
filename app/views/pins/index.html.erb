@@ -25,4 +25,6 @@
   <% end %>
 </div>
 
-<span class="glyphicon glyphicon-plus"></span>
+<div class="center">
+  <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+</div>
